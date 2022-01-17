@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpful Buddy</title>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+  </head>
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg" id="navbarcolor">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html" id="logo">Helpful Buddy</a>
+        </div>
+      </nav>
+
+      <div class="content1">
+        <h1>Welcome to Helpful Buddy!!</h1>
+      </div>
+
+      <div class="content2">
+          <h1>About Us</h1>
+          <br>
+          <p>Helpful Buddy is your personal voice assistant with 2 features.</p>
+          <p>Helpful Buddy can play your favourite music and tell you time!</p>
+          <button id="btn" onclick="recognition.start()">Speak Now</button>
+          <br>
+          <p id="result"></p>
+      </div>
+
+      <div class="content3">
+          <h1>HOW TO USE</h1>
+          <br>
+          <h4>Play Your Favourite Song</h4>
+          <p id="satu">Do you feel boring or lonely? Just press Speak Now Button 
+             <br> and tell your favourite song by saying "Play (The Song Name)
+            <br>(The Song Singer) or just say "Play (The Song Name)".
+             <br>Helpful Buddy will perfectly open YouTube and play your 
+             <br>favourite song.</p>
+          <button id="satu2">Click Here</button>
+          <br> <br>
+          <h4>Tell You Time</h4>
+          <p id="dua">Do you want to know current time? Just press Speak
+           <br> Now Button and ask "What time is it?" to Helpful Buddy.
+            <br> Helpful Buddy will perfectly tell the current time!</p>
+          <button id="dua2">Click Here</button>
+      </div>
+     
+      <div class="contactform">
+        <h4>Have any inquiries? Feel free to contact us by filling the form below!</h4>
+        <br>
+        <div class="mb-3">
+          <label for="Name" id="name">Full Name</label>
+          <input
+            type="text"
+            name="Full Name"
+            class="form-control"
+            id="userFullName"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <div class="error-msg" id="error_msg1"></div>
+        <div class="mb-3">
+          <form action="">
+            <label for="Email" id="email">Email</label>
+            <input
+              type="Email"
+              name="Email"
+              class="form-control"
+              id="userEmail"
+              placeholder="Your Email"
+              required
+            />
+          </form>
+        </div>
+        <div class="error-msg" id="error_msg2"></div>
+        <div class="mb-3">
+          <label for="PhoneNumber" id="phonenumber">Phone Number</label>
+          <input
+            type="text"
+            name="Phone Number"
+            class="form-control"
+            id="userPhoneNumber"
+            placeholder="Your Phone Number"
+            required
+          />
+        </div>
+        <div class="error-msg" id="error_msg3"></div>
+        <div class="mb-3">
+          <label for="Comments" id="comments">Comments</label>
+          <textarea name="Comments" class="form-control" id="userComments" rows="10" placeholder="Your Comments" required></textarea>
+        </div>
+        <div class="error-msg" id="error_msg4"></div>
+        <button class="btn btn-primary" id="Submit">Submit</button>
+        <div id="successAlert" class="d-none alert alert-success" role="alert">
+          Successfully Submitted!
+        </div>
+      </div>
+
+      <div id="footer">
+        <div id="image_footer">
+            <div id="facebook">
+                <a href="https://www.facebook.com/brian.steve.9678/" target="_blank">
+                    <img src="./footerimage/Facebook.png" height="35" width="35" alt="Image Not Loaded">
+                </a>
+            </div>
+            <div id="linkedin">
+                <a href="https://www.linkedin.com/in/brian-steve-b2aa24202/" target="_blank">
+                    <img src="./footerimage/Linkedin.png" height="35" width="35" alt="Image Not Loaded">
+                </a>
+            </div>
+            <div id="youtube">
+                <a href="https://www.youtube.com/c/BrianSteve/videos" target="_blank">
+                    <img src="./footerimage/YouTube.png" height="35" width="35" alt="Image Not Loaded">
+                </a>
+            </div>
+            <div id="instagram">
+                <a href="https://instagram.com/briansteve1901" target="_blank">
+                    <img src="./footerimage/Instagram.png" height="35" width="35" alt="Image Not Loaded">
+                </a>
+            </div>
+            <div id="discord">
+                <a href="https://discord.com/users/838988983249666088" target="_blank">
+                    <img src="./footerimage/Discord.png" height="35" width="35" alt="Image Not Loaded">
+                </a>
+            </div>
+        </div>
+        <div id="copyright">
+            Copyright, Helpful Buddy 2022
+        </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="style.js"></script>
+
+    <script>
+      $(document).ready(()=>{
+          $("#satu2").click(()=>{
+              $("#satu").toggle(2000);
+          });
+       });
+       $(document).ready(()=>{
+          $("#dua2").click(()=>{
+              $("#dua").toggle(2000);
+          });
+       });
+    </script>
+
+  </body>
+</html>

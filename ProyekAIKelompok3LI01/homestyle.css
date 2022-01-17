@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Balsamiq Sans', cursive;
+    color: black;
+    font-weight: bold;
+}
+
+#navbarcolor{
+    background-color: #08b6a9;
+    border-bottom: 5px solid #fcd8db;
+}
+
+#logo{
+    font-size: 3rem;
+    font-family: 'Allison', cursive;
+	color: white;
+	text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px #fff, 
+				0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 
+				0 0 100px #ff00de, 0 0 250px #ff00de;
+}
+
+.content1{
+    padding: 9rem 0rem 2rem 0rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.content1 h1{
+    color: #08b6a9;
+    animation: Konten1 2s;
+}
+
+.content2 button{
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    width: 8rem;
+    height: 4rem;
+    border-radius: 25%;
+    background-color: #fcd8db;
+}
+
+.content2{
+    box-sizing: border-box;
+    background-color: #08b6a9 ;
+    padding: 3rem 3rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content2 h1{
+    padding-bottom: 0.5rem;
+    color: white;
+    border-bottom: 5px #fcd8db solid;
+    text-align: center;
+    text-transform: uppercase;
+    animation: Konten2 2s;
+}
+
+.content2 p{
+    color: white;
+    font-size: 1.2rem;
+    animation: Konten2 2s;
+    text-align: center;
+}
+
+.content3{
+    padding: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content3 h1{
+    padding-bottom: 0.5rem;
+    color: white;
+    border-bottom: 5px #fcd8db solid;
+    text-align: center;
+    text-transform: uppercase;
+    animation: Konten2 2s;
+    color: #08b6a9;
+}
+
+.content3 p{
+    font-size: 1.2rem;
+    display: none;
+    color: #08b6a9;
+}
+
+#satu2,#dua2{
+    background-color: #fcd8db;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.contactform{
+    animation: Form 1.5s ease-in;
+    background-color: #fcd8db;
+    padding: 4rem 20rem 4rem 3rem;
+    animation: Form 2s;
+}
+
+#name,#email,#phonenumber,#comments{
+    font-size: 1.1rem;
+}
+
+#error_msg1,#error_msg2,#error_msg3,#error_msg4{
+    color: red;
+    font-size: 1.2rem;
+}
+
+#Submit{
+    background-color: #08b6a9 ;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#footer{
+    background-color: #08b6a9;
+}
+
+#image_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#copyright{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+}
+
+#facebook,#linkedin,#youtube,#instagram{
+    padding-right: 1rem;
+}
+
+#facebook,#linkedin,#youtube,#instagram,#discord{
+    padding-top: 1rem;
+}
+
+@keyframes Konten1{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes Konten2{
+    0%{
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes Form{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@media only screen and (min-width:992px){
+    .navbar{
+        height: 100px;
+    }    
+}
+
+@media only screen and (max-width:991px){
+    #nav-item-link{
+        font-size: 1.15rem;
+        color: white;
+    }
+    #logo{
+        font-size: 2.75rem;
+        font-family: 'Allison', cursive;
+        color: white;
+        text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px #fff, 
+                    0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 
+                    0 0 100px #ff00de, 0 0 250px #ff00de;
+    }
+    .content1{
+        padding: 9rem 0rem 2rem 0rem;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .content1 h1{
+        color: #08b6a9;
+        animation: Konten1 2s;
+        font-size: 1.9rem;
+    }
+    
+    .content2 button{
+        font-size: 1.15rem;
+        margin-top: 0.5rem;
+        width: 7rem;
+        height: 3.5rem;
+        border-radius: 25%;
+        background-color: #fcd8db;
+    }
+    
+    .content2{
+        box-sizing: border-box;
+        background-color: #08b6a9 ;
+        padding: 3rem 3rem 1rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .content2 h1{
+        padding-bottom: 0.5rem;
+        color: white;
+        border-bottom: 5px #fcd8db solid;
+        text-align: center;
+        text-transform: uppercase;
+        animation: Konten2 2s;
+        font-size: 1.9rem;
+    }
+    
+    .content2 p{
+        color: white;
+        font-size: 1.15rem;
+        animation: Konten2 2s;
+        text-align: center;
+    }
+    
+    .content3{
+        padding: 3rem 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .content3 h1{
+        padding-bottom: 0.5rem;
+        color: white;
+        border-bottom: 5px #fcd8db solid;
+        text-align: center;
+        text-transform: uppercase;
+        animation: Konten2 2s;
+        color: #08b6a9;
+        font-size: 1.9rem;
+    }
+    
+    .content3 p{
+        font-size: 1.15rem;
+        display: none;
+        color: #08b6a9;
+    }
+    
+    #satu2,#dua2{
+        background-color: #fcd8db;
+        padding: 0.25rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+    }    
+    .contactform{
+        padding: 4rem 12rem 4rem 2rem;
+    }
+    
+    #name,#email,#phonenumber,#comments{
+        font-size: 1.15rem;
+    }
+    
+    #error_msg1,#error_msg2,#error_msg3,#error_msg4{
+        color: red;
+        font-size: 1.15rem;
+    }
+    
+    #Submit{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }    
+    #copyright{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.15rem;
+        text-align: center;
+    }
+    #image_footer img{
+        width: 33px;
+        height: 33px;
+    }
+}
+
+@media only screen and (max-width:850px){
+    #nav-item-link{
+        font-size: 1.10rem;
+        color: white;
+    }
+    #logo{
+        font-size: 2.7rem;
+        font-family: 'Allison', cursive;
+        color: white;
+        text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px #fff, 
+                    0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 
+                    0 0 100px #ff00de, 0 0 250px #ff00de;
+    }
+    .content1{
+        padding: 9rem 0rem 2rem 0rem;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .content1 h1{
+        color: #08b6a9;
+        animation: Konten1 2s;
+        font-size: 1.8rem;
+    }
+    
+    .content2 button{
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+        width: 7rem;
+        height: 3rem;
+        border-radius: 25%;
+        background-color: #fcd8db;
+    }
+    
+    .content2{
+        box-sizing: border-box;
+        background-color: #08b6a9 ;
+        padding: 3rem 3rem 1rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .content2 h1{
+        padding-bottom: 0.5rem;
+        color: white;
+        border-bottom: 5px #fcd8db solid;
+        text-align: center;
+        text-transform: uppercase;
+        animation: Konten2 2s;
+        font-size: 1.8rem;
+    }
+    
+    .content2 p{
+        color: white;
+        font-size: 1.1rem;
+        animation: Konten2 2s;
+        text-align: center;
+    }
+    
+    .content3{
+        padding: 3rem 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .content3 h1{
+        padding-bottom: 0.5rem;
+        color: white;
+        border-bottom: 5px #fcd8db solid;
+        text-align: center;
+        text-transform: uppercase;
+        animation: Konten2 2s;
+        color: #08b6a9;
+        font-size: 1.8rem;
+    }
+    
+    .content3 p{
+        font-size: 1.1rem;
+        display: none;
+        color: #08b6a9;
+    }
+    
+    #satu2,#dua2{
+        background-color: #fcd8db;
+        padding: 0.25rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .contactform{
+        padding: 3rem 8rem 3rem 2rem;
+    }
+    
+    #name,#email,#phonenumber,#comments{
+        font-size: 1.1rem;
+    }
+    
+    #error_msg1,#error_msg2,#error_msg3,#error_msg4{
+        color: red;
+        font-size: 1.1rem;
+    }
+    
+    #Submit{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }    
+    #copyright{
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    #image_footer img{
+        width: 31px;
+        height: 31px;
+    }
+} 
+
+@media only screen and (max-width:600px){
+    #nav-item-link{
+        font-size: 1.10rem;
+        color: white;
+    }
+    #logo{
+        font-size: 2.6rem;
+        font-family: 'Allison', cursive;
+        color: white;
+        text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px #fff, 
+                    0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 
+                    0 0 100px #ff00de, 0 0 250px #ff00de;
+    }
+    .content1{
+        padding: 8rem 0rem 1.5rem 0rem;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .content1 h1{
+        color: #08b6a9;
+        animation: Konten1 2s;
+        font-size: 1.7rem;
+    }
+    
+    .content2 button{
+        font-size: 1.05rem;
+        margin-top: 0.5rem;
+        width: 6rem;
+        height: 3rem;
+        border-radius: 25%;
+        background-color: #fcd8db;
+    }
+    
+    .content2{
+        box-sizing: border-box;
+        background-color: #08b6a9 ;
+        padding: 2.5rem 3rem 0.5rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .content2 h1{
+        padding-bottom: 0.5rem;
+        color: white;
+        border-bottom: 5px #fcd8db solid;
+        text-align: center;
+        text-transform: uppercase;
+        animation: Konten2 2s;
+        font-size: 1.7rem;
+    }
+    
+    .content2 p{
+        color: white;
+        font-size: 1.05rem;
+        animation: Konten2 2s;
+        text-align: center;
+    }
+    
+    .content3{
+        padding: 2.5rem 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .content3 h1{
+        padding-bottom: 0.5rem;
+        color: white;
+        border-bottom: 5px #fcd8db solid;
+        text-align: center;
+        text-transform: uppercase;
+        animation: Konten2 2s;
+        color: #08b6a9;
+        font-size: 1.7rem;
+    }
+    
+    .content3 p{
+        font-size: 1.105rem;
+        display: none;
+        color: #08b6a9;
+    }
+    
+    #satu2,#dua2{
+        background-color: #fcd8db;
+        padding: 0.25rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+    }
+    .contactform{
+        padding: 2rem 3rem 2rem 1rem;
+    }
+    
+    #name,#email,#phonenumber,#comments{
+        font-size: 1.05rem;
+    }
+    
+    #error_msg1,#error_msg2,#error_msg3,#error_msg4{
+        color: red;
+        font-size: 1.05rem;
+    }
+    
+    #Submit{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }    
+    #copyright{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    #image_footer img{
+        width: 30px;
+        height: 30px;
+    }
+} 

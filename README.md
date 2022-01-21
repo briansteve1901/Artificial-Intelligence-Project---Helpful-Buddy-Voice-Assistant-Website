@@ -13,6 +13,7 @@ hanya perlu bertanya kepada Voice Assistant mengenai waktu sekarang.
  Informasi lebih lengkap tentang Voice Assistant Helpful Buddy bisa dilihat di link berikut: 
  
  Video YouTube: https://www.youtube.com/watch?v=xKDt-jX6TK0 
+ 
  PKM-KC: https://docs.google.com/document/d/1msfUaLh9fM3RBZ1YluEU9xWAYB_VRjLb/edit
  
  Selamat mencoba!! Terima kasih.

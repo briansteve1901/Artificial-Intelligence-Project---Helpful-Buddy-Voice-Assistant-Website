@@ -10,7 +10,7 @@ hanya perlu bertanya kepada Voice Assistant mengenai waktu sekarang.
  dengan ekstensi .html yang ada di repo itu. Lalu, kalian tinggal membuka file dengan ekstensi .html itu dengan cara mengklik file itu. File akan langsung terbuka dan kalian bisa 
  langsung menggunakan Voice Assistant itu.
  
- Informasi lebih lengkap tentang Voice Assistant Helpful Buddy bisa dilihat di link berikut: 
+ Informasi lebih lengkap tentang Voice Assistant Helpful Buddy bisa ditonton dan dilihat di link berikut: 
  
  Video YouTube: https://www.youtube.com/watch?v=xKDt-jX6TK0 
  
